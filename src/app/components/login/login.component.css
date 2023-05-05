@@ -1,0 +1,124 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #1b2a41;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #f3f3f3;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: #ffffff;
+    color: #1b2a41;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+.transition-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.text-1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    color: #ffffff;
+    animation: slide-down 2s ease-in-out infinite;
+}
+
+.text-2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    color: #ffffff;
+    animation: slide-top 4s ease-in-out infinite;
+}
+
+.text-1 {
+    animation-delay: 1s;
+}
+
+.text-2 {
+    animation-delay: 1s;
+}
+
+@keyframes slide-top {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: -20px;
+        opacity: 1;
+    }
+
+    95% {
+        top: -20px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        down: 0;
+        opacity: 0;
+    }
+
+    5% {
+        down: -20px;
+        opacity: 1;
+    }
+
+    95% {
+        down: -20px;
+        opacity: 1;
+    }
+
+    100% {
+        down: 0;
+        opacity: 0;
+    }
+}

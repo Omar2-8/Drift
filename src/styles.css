@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+body, html, app-root {
+    background-color: #0c1821;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #d6d6d6;
+  }
+  p {
+    color: #697497;
+  }
+  .btn-primary {
+    background-color: #0C1821;
+    border-color: #0C1821;
+  }
+  .btn-primary:hover {
+    background-color: #1B2A41;
+    border-color: #1B2A41;
+  }
+  footer {
+padding-top: 60px;
+padding-bottom: 30px;
+}
+
+footer h5 {
+color: #fff;
+font-size: 18px;
+margin-bottom: 16px;
+}
+
+footer ul.list-unstyled li a {
+color: #9da0a5;
+font-size: 14px;
+margin-bottom: 10px;
+display: block;
+transition: all 0.3s ease-in-out;
+}
+
+footer ul.list-unstyled li a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+footer address {
+color: #9da0a5;
+font-size: 14px;
+margin-bottom: 20px;
+}
+
+footer hr {
+border-color: #324A5F;
+opacity: 0.25;
+}
+
+footer p {
+color: #9da0a5;
+font-size: 14px;
+margin-bottom: 0;
+}
+
+footer ul.list-inline li a {
+color: #fff;
+
+}
+.bg-dark{
+background-color: #2e3740!important;
+}
+.navbar-toggler{
+background-color: #ffffff;
+}
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    input[type="text"] {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+/* Medium and large screens */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    input[type="text"] {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
